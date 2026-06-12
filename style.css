@@ -268,3 +268,120 @@ nav a:hover {
         transform: rotate(2deg) scale(1.03);
     }
 }
+/* ====================== CALENDÁRIO 2026 ====================== */
+.calendario {
+    padding: 80px 5% 120px;
+    background: rgba(255, 250, 240, 0.95);
+}
+
+.calendario h1 {
+    font-size: 3.6rem;
+    color: #DAA520;
+    text-align: center;
+    text-shadow: 6px 6px 0 #E5EAE6;
+    transform: rotate(-3deg);
+}
+
+.month-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.month-card {
+    background: #fff;
+    border: 14px solid #DAA520;
+    box-shadow: 16px 16px 0 #E5EAE6;
+    padding: 25px 15px;
+    border-radius: 12px;
+    transform: rotate(-2deg);
+    transition: all 0.4s;
+}
+
+.month-card:hover {
+    transform: rotate(3deg) scale(1.03);
+    box-shadow: 20px 20px 0 #ff4081;
+}
+
+.month-title {
+    font-size: 2.4rem;
+    color: #DAA520;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 8px solid #ffeb3b;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    text-align: center;
+}
+
+.weekday {
+    font-weight: bold;
+    background: #f0ebca;
+    padding: 10px 4px;
+    border: 4px solid #DAA520;
+    color: #222;
+}
+
+.day {
+    padding: 14px 6px;
+    border: 3px solid #E5EAE6;
+    background: #fffaf0;
+    font-weight: bold;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+/* Cores especiais */
+.day.ferias { background: #ffebee; color: #d32f2f; }
+.day.feriado { background: #fff3e0; color: #ef6c00; }
+.day.recesso { background: #e8f5e9; color: #2e7d32; }
+.day.planejamento { background: #e3f2fd; color: #1565c0; }
+.day.inicio { background: #f3e5f5; color: #7b1fa2; }
+
+.days-count {
+    margin-top: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #DAA520;
+    background: #fff9e6;
+    padding: 12px;
+    border: 5px solid #E5EAE6;
+}
+
+/* Legenda */
+.legend-box {
+    margin: 90px auto;
+    max-width: 1000px;
+    background: #fff;
+    border: 14px solid #DAA520;
+    padding: 40px;
+    box-shadow: 16px 16px 0 #E5EAE6;
+    transform: rotate(-1deg);
+}
+
+.legend-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.25rem;
+}
+
+.color-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    border: 4px solid #E5EAE6;
+    margin-right: 10px;
+}
