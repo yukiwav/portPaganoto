@@ -268,6 +268,69 @@ nav a:hover {
         transform: rotate(2deg) scale(1.03);
     }
 }
+/* ====================== FORMULÁRIO DE CONTATO ====================== */
+/* ====================== FORMULÁRIO DE CONTATO ====================== */
+.formulario-contato {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 50px 40px;
+    border: 12px solid #DAA520;
+    box-shadow: 18px 18px 0 #E5EAE6;
+    transform: rotate(-2deg);
+    transition: all 0.4s;
+}
+
+.formulario-contato:hover {
+    transform: rotate(2deg);
+    box-shadow: 22px 22px 0 #ff4081;
+}
+
+.formulario-contato h2 {
+    text-align: center;
+    color: #DAA520;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 6px solid #E5EAE6;
+    background: #fffaf0;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #DAA520;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(218, 165, 32, 0.3);
+}
+
+.formulario-contato .botao {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.6rem;
+    padding: 18px;
+}
+
 /* ====================== CALENDÁRIO 2026 ====================== */
 .calendario {
     padding: 80px 5% 120px;
